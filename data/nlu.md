@@ -20,6 +20,7 @@
 - of course
 - that sounds good
 - correct
+- Perfect
 
 ## intent:deny
 - no
@@ -28,6 +29,7 @@
 - don't like that
 - no way
 - not really
+- am not really sure about that
 
 ## intent:mood_great
 - perfect
