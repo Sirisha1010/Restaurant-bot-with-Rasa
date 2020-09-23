@@ -1,6 +1,7 @@
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+  
 intents:
 - greet
 - goodbye
@@ -12,13 +13,16 @@ intents:
 - search_restaurants
 - location
 - cuisine_info
+
 entities:
 - cuisine
+
 slots:
   cuisine:
     type: text
   location:
     type: text
+    
 responses:
   utter_greet:
   - text: Hey! How can I help you today?
@@ -37,6 +41,7 @@ responses:
   - text: Could you help me with your location please?
   utter_ask_cuisine:
   - text: Which cuisine would you prefer?
+  
 actions:
 - utter_greet
 - utter_cheer_up
