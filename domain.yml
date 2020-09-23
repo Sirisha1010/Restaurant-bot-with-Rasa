@@ -1,0 +1,50 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- search_restaurants
+- location
+- cuisine_info
+entities:
+- cuisine
+slots:
+  cuisine:
+    type: text
+  location:
+    type: text
+responses:
+  utter_greet:
+  - text: Hey! How can I help you today?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_ask_location:
+  - text: Could you help me with your location please?
+  utter_ask_cuisine:
+  - text: Which cuisine would you prefer?
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_ask_location
+- utter_ask_cuisine
+- action_set_location
+- action_show_restaurants
